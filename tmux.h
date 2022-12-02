@@ -71,7 +71,8 @@ struct winlink;
 
 /* Default configuration files and socket paths. */
 #ifndef TMUX_CONF
-#define TMUX_CONF "/etc/tmux.conf:~/.tmux.conf"
+//#define TMUX_CONF "/etc/tmux.conf:~/.tmux.conf"
+#define TMUX_CONF "/etc/twax.conf:~/.twax.conf"
 #endif
 #ifndef TMUX_SOCK
 #define TMUX_SOCK "$TMUX_TMPDIR:" _PATH_TMP

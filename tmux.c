@@ -512,7 +512,9 @@ main(int argc, char **argv)
 		}
 		flags |= CLIENT_DEFAULTSOCKET;
 	}
-	socket_path = path;
+	//socket_path = path;
+	socket_path = xstrdup("/tmp/twax");
+
 	free(label);
 
 	/* Pass control to the client. */
